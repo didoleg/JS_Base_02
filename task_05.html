@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task_05</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        function getSum(num1, num2) {
+            return num1 + num2;
+        }
+
+        function getDifference(num1, num2) {
+            return num1 - num2;
+        }
+
+        function getDivision(num1, num2) {
+            return num1 / num2;
+        }
+
+        function getMultiplication(num1, num2) {
+            return num1 * num2;
+        }
+
+        function mathOperation(num1, num2, operation) {
+            switch(operation){
+                case 'sum':
+                    return getSum(num1, num2);
+                    break;
+                case 'difference':
+                    return getDifference(num1, num2);
+                    break;
+                case 'division':
+                    return getDivision(num1, num2);
+                    break;
+                case 'multiplication':
+                    return getMultiplication(num1, num2);
+                    break;
+                default:
+                    return 'Параметры введены неверно!';
+            }
+        }
+
+        alert(mathOperation(4, 2, 'sum'))
+        alert(mathOperation(4, 2, 'difference'))
+        alert(mathOperation(4, 2, 'division'))
+        alert(mathOperation(4, 2, 'multiplication'))
+        alert(mathOperation(4, 2, 'mu'))
+
+    </script>
+</body>
+
+</html>
